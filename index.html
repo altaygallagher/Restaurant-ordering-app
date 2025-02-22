@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+        <script src="index.js" async type="module"></script>
+    </head>
+    <body>
+        <header>
+            <div class="header-text">
+                <p class="header-title">Jimmy's Diner</p>
+                <p class="header-subtitle">The best burgers and pizzas in town.</p>
+            </div>
+        </header>
+        <main>
+            <div id="item-list">
+                <!-- menu items -->
+            </div>
+            <!-- suggested id="shopping-cart-container" -->
+            <div class="hidden" id="hidden">
+                <div class ='shopping-cart' id="shopping-cart">
+                    <p class="your-order"> Your Order</p>
+                </div>  
+                          <!-- suggestion id="cart-list" -->
+                <div class="render-cart-items" id="render-cart-items">
+                    <!-- shopping-cart -->
+                </div>
+                <div class="total-price-container">
+                    <p>Total Price</p>
+                    <span id="total-price"></span>                
+                </div>
+                <button 
+                    type="button" 
+                    class="complete-btn big-btn"
+                    id="complete-btn">
+                    Complete Order
+                </button>
+            </div>
+            <div class="card-details" id="card-details">
+                <h1 class="enter-details">Enter Card Details</h1>                    
+                <form class="form" id="form">
+                    <input type="text" placeholder="Enter Card Name" name="card-name" required>
+                    <input type="text" placeholder="Enter Card Number" name="card-number" required>
+                    <input type="text" placeholder="Enter CVV" name="card-cvv" required>      
+                    <button 
+                        type="submit" 
+                        class="pay-btn big-btn" 
+                        id="pay-btn">
+                        Pay
+                    </button>              
+                </form>
+            </div>
+            <div class="order-coming-message" id="order-coming-message">
+                <!-- render text her -->
+            </div>
+        </main>
+    </body>
+</html>
+

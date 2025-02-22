@@ -1,0 +1,228 @@
+body {
+    margin: 0 auto 0 auto;
+    font-family: 'Smythe', cursive;
+    width: 700px;
+    min-height: 1200px;
+} 
+
+main{
+    width: 650px;
+    margin: 0px auto;
+}
+
+header{
+    background-image: url("/images/burger.png");
+    background-size: cover; 
+    width: 700px;
+    height: 190px; 
+    color: #FFFFFF;    
+}
+
+/* header font sizes */
+.header-text{
+    padding: 10px 40px
+}
+
+.header-title{
+    font-size: 38px;
+    padding-bottom: 0px;
+    margin-bottom: 0px
+    
+}
+
+.header-subtitle{
+    font-size: 23px;
+    padding-top: 0px;
+    line-height: 0px;
+}
+
+/* shopping list properties */
+.shop-item-line{
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 0px;
+    border-bottom: solid 1px #D2D2D2
+}
+
+.shop-item{
+    display: flex;
+    line-height: 0px;
+}
+
+.item-info{
+    margin: 0px;
+    padding: 0px;
+}
+
+.item-name{
+    font-size: 30px;
+    margin: 12px 0px 0px 0px;
+}
+
+.item-ingredients{
+    font-size: 18px;
+    color: #8B8B8B;
+    margin: 30px 0px 0px 0px;
+    
+}
+
+.item-price{
+    font-weight: bold;
+    margin: 30px 0px 0px 0px;
+    
+}
+
+.dollar-sign{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px; 
+}
+.emoji{
+    margin-right: 30px  
+}
+
+.add-btn{
+    border-radius: 100%;
+    border: #dedede solid 2px;
+    background-color: #FFFFFF;
+    width: 55px;
+    height: 55px;
+    font-size: 30px;
+    font-family: 'Inter', sans-serif;
+}
+
+.add-btn:hover{
+    font-size: 33px; 
+    border: gray solid 3px;
+}
+
+.add-btn:active{
+    font-size: 27px; 
+    border: #dedede solid 1px;
+}
+
+/* Shopping Cart properties */
+
+.your-order{
+    font-size: 30px;
+}
+
+.cart-items{
+    display: flex;
+    justify-content: space-between;
+    font-size: 29px;
+    padding-right: 0px
+}
+.dollar-sign-cart{
+    font-size: 29px
+}
+
+.cart-item-name{
+    margin: 10px 0px 0px 0px;
+}
+
+.shopping-cart{
+    display: flex;
+    justify-content: center;
+}
+
+.hidden{
+    display: none; /*block on click*/
+    
+}
+.render-cart-items{
+        padding-bottom: 20px;
+        border-bottom: 3px solid #393333;
+}
+
+.big-btn{
+    background-color: #16DB99;
+    border: none;
+    color: white;
+    width: 650px;
+    padding: 13px;
+    margin-bottom: 30px; 
+    font-size: 30px;
+}
+
+.big-btn:hover
+.big-btn:focus{
+    background-color: #17e39f;
+    color: #252525;
+}
+
+.big-btn:active{
+    background-color: #13ba82;    
+    color: #FFFFFF;
+}
+
+.total-price-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px;
+    line-height: 0px;
+    font-size: 30px;
+}
+
+.item-and-remove{
+    display: flex;
+    justify-content: space-between;
+}
+
+.remove-btn{
+    border: none;
+    background-color: #FFFFFF;
+    color: #BBBBBB;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 25px; 
+}
+
+.card-details{
+    display: none;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 450px;
+    width: 600px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 100px 10px #757575;
+    background-color: #FFFFFF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.enter-details{
+    text-align: center;
+    margin: 40px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    margin: auto;
+}
+
+input{
+    margin: 0px 0px 20px 0px;
+    padding: 20px 0px 20px 30px;
+    border: 2px solid #757575;
+    border-radius: 4px;
+    font-size: 25px;
+}
+
+.pay-btn{
+    width: 550px;
+}
+
+.order-message{
+    font-size: 40px;
+    text-align: center;
+    background-color: #ECFDF5;
+    color: #065F46;
+    padding: 30px;
+    border-radius: 3px; 
+}
